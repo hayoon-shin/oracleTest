@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B260D64-EC94-7E9E-E5B9-12C2C0BB1469" name="customer01">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:20:19 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" directorySegmentName="seg_0" id="8FF0F1D3-DC23-C248-F89B-3407EEEEFF8F">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:25:24 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<ownDataTypeParameters>7 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" directorySegmentName="seg_0" id="D3C113A3-DDEB-5D1A-ADC7-244B15569FA2">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:25:24 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gender" directorySegmentName="seg_0" id="A68C55CF-8AAD-317F-5834-5CEE8236DF87">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:25:59 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="birthcday" directorySegmentName="seg_0" id="62C49C9F-8E58-A2B5-15DD-0D23DAA65ADB">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:26:34 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone" directorySegmentName="seg_0" id="66047311-C3E9-924F-31DF-187935DE7F60">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:27:24 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>16 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" directorySegmentName="seg_0" id="9AEAFF4C-87FD-1242-AFD5-B0A08EDACE89">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:28:17 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bal_point" directorySegmentName="seg_0" id="A28E352A-9618-8050-13C1-F2285522DDA5">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:29:25 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BCBEF64F-16FF-6046-C4EB-B8F3C3938E52" name="customer01_user_id_PK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:25:24 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FF0F1D3-DC23-C248-F89B-3407EEEEFF8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9C6C39F-A950-D4EE-8356-BC8A2B8A0A5D" name="customer01_email_uk">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:31:43 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AEAFF4C-87FD-1242-AFD5-B0A08EDACE89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
