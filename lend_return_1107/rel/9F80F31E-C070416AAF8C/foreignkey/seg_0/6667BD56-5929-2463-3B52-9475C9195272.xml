@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6667BD56-5929-2463-3B52-9475C9195272" containerWithKeyObject="6FF68BDC-0D50-8FC4-265A-CF0C526A203B" localFKIndex="97737FA7-4A20-39F5-2A60-E11305E3CAE5" name="lend_return_v_gogek_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:51:30 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<referredTableLongName>v_gogek</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8119BA55-1C26-1384-8E7A-A8BA84C3DA07</referredTableID>
+<keyObject>42019F77-B631-3FFA-28DA-C2A686CAB8F2</keyObject>
+<referredKeyID>42019F77-B631-3FFA-28DA-C2A686CAB8F2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>g_code</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

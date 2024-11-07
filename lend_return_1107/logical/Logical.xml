@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="4F408B80-E009-FB88-77FF-A8576F3B3614" mainViewID="F544DA74-B908-C7CB-C4EE-14A7F7F3D3A1">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:32:52 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

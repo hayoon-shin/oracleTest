@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="9F80F31E-958B-F474-A7AB-C070416AAF8C" mainViewID="686E70E2-4FA1-ACC7-0702-54E6B9BFD238">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:33:50 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

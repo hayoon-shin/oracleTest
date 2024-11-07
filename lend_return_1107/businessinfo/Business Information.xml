@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="5E168C90-FE57-AFFD-F924-2DFD551D0413">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:32:52 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D5DEB250-EB6D-62A8-F1A2-9957BFD1EB99" containerWithKeyObject="6FF68BDC-0D50-8FC4-265A-CF0C526A203B" localFKIndex="1699CBC0-EE5C-269B-FD9C-53633C658654" name="lend_return_video_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:53:15 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<referredTableLongName>video</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6CE43824-24A3-9508-84F5-7A974B46FB75</referredTableID>
+<keyObject>6DB77D13-D441-6CD3-2220-B13EBB4D7197</keyObject>
+<referredKeyID>6DB77D13-D441-6CD3-2220-B13EBB4D7197</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>v_code</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

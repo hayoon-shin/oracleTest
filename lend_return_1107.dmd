@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="lend_return_1107" id="2C0E351D-04A1-1D20-71AF-60A364E9E50E" version="3.5">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:32:52 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2C0E351D-04A1-1D20-71AF-60A364E9E50E</designId>
+</OSDM_Design>
