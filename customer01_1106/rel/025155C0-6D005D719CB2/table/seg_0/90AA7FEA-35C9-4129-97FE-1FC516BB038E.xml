@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90AA7FEA-35C9-4129-97FE-1FC516BB038E" schemaObject="9D5D9D00-34C7-6E70-C832-50B6F6A066F7" name="CUSTOMER01">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>CUSTOMER01</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>FB8C5183-39F2-856C-99BF-CBC404269D5E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_ID" id="CE7ACD0D-0DEF-65EC-1727-E0001DA5156F">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUSTOMER01</sourceObjSchema>
+<sourceObjName>USER_ID</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>71D67010-42DC-6EE3-9053-8C933E4209D8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="EB71EC42-D7E5-AA32-99A8-7AE347B9D388">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUSTOMER01</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>7B1ABF19-E550-E938-B11D-26456BB8D444</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENDER" id="98CC176A-0398-6761-C990-537B6FD7F093">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUSTOMER01</sourceObjSchema>
+<sourceObjName>GENDER</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>87B9416D-BC6C-6F71-98A9-FD0E7FECF6BD</importedID>
+<constraintName>CUSTOMER01_GENDER_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;M&apos;" description=""/>
+<valueDef value="&apos;W&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTHCDAY" id="BBB6D500-7CF0-BAC2-23F4-D5BA9238D36E">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUSTOMER01</sourceObjSchema>
+<sourceObjName>BIRTHCDAY</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>ECC79BE8-8FF5-4140-63C9-DAB0A7619EA9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE" id="B448C7C8-44A4-5EA7-3F09-E3A9D3D14269">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUSTOMER01</sourceObjSchema>
+<sourceObjName>PHONE</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>57A5BFA8-A3EC-72F8-300A-7CA4250975FE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 BYTE</dataTypeSize>
+<ownDataTypeParameters>16 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="9E1D1B94-660F-ABE7-2A04-72757BD7F24A">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUSTOMER01</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>7A958F85-6E9A-0FA7-C28A-8353F17E00F5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BAL_POINT" id="7F9CEF33-0873-2AEB-8C1D-AF205F80BE55">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUSTOMER01</sourceObjSchema>
+<sourceObjName>BAL_POINT</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>D347A405-8575-36D2-2A18-724202F482C8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0ACE5F1D-A9F8-B8FF-1BBE-9B38EA50515C" name="CUSTOMER01_USER_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>CUSTOMER01_USER_ID_PK</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>417D82D1-568B-A347-49DF-04AE5A3184A3</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE7ACD0D-0DEF-65EC-1727-E0001DA5156F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA17E323-C085-E86D-C7A2-17B151FD93AD" name="CUSTOMER01_EMAIL_UK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>CUSTOMER01_EMAIL_UK</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>795E3FC1-6B5E-1159-A37C-890FA0E21E6D</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E1D1B94-660F-ABE7-2A04-72757BD7F24A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="237DCA10-7322-B8D6-F723-5F31BA8D9085" schemaObject="9D5D9D00-34C7-6E70-C832-50B6F6A066F7" name="CUSTOMER01_EMAIL_UK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>CUSTOMER01_EMAIL_UK</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>042E2F0F-D825-8A09-4651-DAA6A3657EB2</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E1D1B94-660F-ABE7-2A04-72757BD7F24A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8DD249E-495D-115A-BAD4-19BD25339064" schemaObject="9D5D9D00-34C7-6E70-C832-50B6F6A066F7" name="CUSTOMER01_USER_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>CUSTOMER01_USER_ID_PK</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>71BCEF8E-3060-7431-232E-C3ADA92E0CDA</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE7ACD0D-0DEF-65EC-1727-E0001DA5156F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

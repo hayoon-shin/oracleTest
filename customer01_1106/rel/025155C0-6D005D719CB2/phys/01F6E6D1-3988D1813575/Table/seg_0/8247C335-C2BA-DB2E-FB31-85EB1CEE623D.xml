@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="JOB_HISTORY" directorySegmentName="seg_0" id="8247C335-C2BA-DB2E-FB31-85EB1CEE623D">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<schemaObject>9D5D9D00-34C7-6E70-C832-50B6F6A066F7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>E2F41525-6C71-D846-DBAE-660CF619F694</segment>
+<tableSpace>7D56FC64-898E-F4E1-8651-0BFA301D6885</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="END_DATE" id="110AF239-20BE-B781-E555-784801D3B2A7">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB_ID" id="31C1285B-45B0-6C65-D08F-60C2273123C4">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTMENT_ID" id="476178F1-850E-84C9-055F-C623D474FA95">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_ID" id="95A53080-8CF2-6192-12A7-3559B80E4D4F">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="START_DATE" id="9CF84B1A-4D2F-15E9-04AA-F6DD62B52445">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="JHIST_EMP_ID_ST_DATE_PK" id="103C7313-07AF-070D-5661-DF21B0665692">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<schemaObject>9D5D9D00-34C7-6E70-C832-50B6F6A066F7</schemaObject>
+<segment>1013D8CA-734D-5E8F-5F41-5D183631E690</segment>
+<tableSpace>7D56FC64-898E-F4E1-8651-0BFA301D6885</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="JHIST_JOB_IX" id="4964389F-6F5A-8610-34DA-DFE1695AF707">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<schemaObject>9D5D9D00-34C7-6E70-C832-50B6F6A066F7</schemaObject>
+<segment>1013D8CA-734D-5E8F-5F41-5D183631E690</segment>
+<tableSpace>7D56FC64-898E-F4E1-8651-0BFA301D6885</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="JHIST_EMPLOYEE_IX" id="64767AA8-548F-9426-2107-CF472B42CDAD">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<schemaObject>9D5D9D00-34C7-6E70-C832-50B6F6A066F7</schemaObject>
+<segment>1013D8CA-734D-5E8F-5F41-5D183631E690</segment>
+<tableSpace>7D56FC64-898E-F4E1-8651-0BFA301D6885</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="JHIST_DEPARTMENT_IX" id="F2DCC538-C29C-7BD2-2CF6-D14A315E8D89">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<schemaObject>9D5D9D00-34C7-6E70-C832-50B6F6A066F7</schemaObject>
+<segment>1013D8CA-734D-5E8F-5F41-5D183631E690</segment>
+<tableSpace>7D56FC64-898E-F4E1-8651-0BFA301D6885</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="JHIST_DEPT_FK" id="8E24D6F3-530F-AEE1-6C69-F9A284FE8E54">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="JHIST_EMP_FK" id="CA091C1B-6A05-2624-D4A8-88DFDA6CD3D9">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="JHIST_JOB_FK" id="CE1C883D-3E0D-09B4-685F-CA7DA83CCF3B">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="JHIST_EMP_ID_ST_DATE_PK" id="4919DB5A-86B7-C36E-DD7B-3B6996C339D0">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<segment>1013D8CA-734D-5E8F-5F41-5D183631E690</segment>
+<tableSpace>7D56FC64-898E-F4E1-8651-0BFA301D6885</tableSpace>
+<existingIndex>103C7313-07AF-070D-5661-DF21B0665692</existingIndex>
+<indexSegment>1013D8CA-734D-5E8F-5F41-5D183631E690</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="JHIST_DATE_INTERVAL" id="8427D691-757E-CBE2-BE0A-D656BE0EF1DF">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev20c>

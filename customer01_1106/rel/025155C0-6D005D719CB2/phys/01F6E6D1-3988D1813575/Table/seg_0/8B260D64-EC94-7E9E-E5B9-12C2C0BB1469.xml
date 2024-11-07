@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="customer01" directorySegmentName="seg_0" id="8B260D64-EC94-7E9E-E5B9-12C2C0BB1469">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:42:49 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="birthcday" id="62C49C9F-8E58-A2B5-15DD-0D23DAA65ADB">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:42:49 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="phone" id="66047311-C3E9-924F-31DF-187935DE7F60">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:42:49 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="user_id" id="8FF0F1D3-DC23-C248-F89B-3407EEEEFF8F">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:42:49 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="9AEAFF4C-87FD-1242-AFD5-B0A08EDACE89">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:42:49 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="bal_point" id="A28E352A-9618-8050-13C1-F2285522DDA5">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:42:49 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="gender" id="A68C55CF-8AAD-317F-5834-5CEE8236DF87">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:42:49 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="name" id="D3C113A3-DDEB-5D1A-ADC7-244B15569FA2">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:42:49 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="customer01_user_id_PK" id="BCBEF64F-16FF-6046-C4EB-B8F3C3938E52">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:42:49 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="customer01_email_uk" id="C9C6C39F-A950-D4EE-8356-BC8A2B8A0A5D">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:42:49 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

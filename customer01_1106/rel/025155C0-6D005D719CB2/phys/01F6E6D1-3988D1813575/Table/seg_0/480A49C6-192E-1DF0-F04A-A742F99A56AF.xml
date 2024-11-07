@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="REGIONS" directorySegmentName="seg_0" id="480A49C6-192E-1DF0-F04A-A742F99A56AF">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<schemaObject>9D5D9D00-34C7-6E70-C832-50B6F6A066F7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>E2F41525-6C71-D846-DBAE-660CF619F694</segment>
+<tableSpace>7D56FC64-898E-F4E1-8651-0BFA301D6885</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="REGION_ID" id="1251BBD4-1203-7CB3-901A-640FC3DC5A39">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGION_NAME" id="E1F08CC7-641E-858D-5126-D5203BB38A4B">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="REG_ID_PK" id="C04E60ED-E327-AB7C-DEDF-162CDBE0893F">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<schemaObject>9D5D9D00-34C7-6E70-C832-50B6F6A066F7</schemaObject>
+<segment>1013D8CA-734D-5E8F-5F41-5D183631E690</segment>
+<tableSpace>7D56FC64-898E-F4E1-8651-0BFA301D6885</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="REG_ID_PK" id="31E2B87A-FE69-657A-26B0-70EB9C863DC1">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<segment>1013D8CA-734D-5E8F-5F41-5D183631E690</segment>
+<tableSpace>7D56FC64-898E-F4E1-8651-0BFA301D6885</tableSpace>
+<existingIndex>C04E60ED-E327-AB7C-DEDF-162CDBE0893F</existingIndex>
+<indexSegment>1013D8CA-734D-5E8F-5F41-5D183631E690</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

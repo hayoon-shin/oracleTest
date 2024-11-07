@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="UPDATE_JOB_HISTORY" directorySegmentName="seg_0" id="AE72AC76-05E3-73CC-8A2E-31B327EC84C1">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>UPDATE_JOB_HISTORY</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:42:44 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<actions>UPDATE</actions>
+<body><![CDATA[BEGIN
+  add_job_history(:old.employee_id, :old.hire_date, sysdate,
+                  :old.job_id, :old.department_id);
+END;]]></body>
+<triggerTime>AFTER</triggerTime>
+<columns>C695A638-6765-09E3-0FA7-8BF9267F2692, B9A45CAF-3EC8-F9EE-8569-3382CAFD1AA6</columns>
+<owner>5C722DA2-D13B-9716-296A-A79166F9AEE6</owner>
+<table>8FEC14AA-41D7-9757-58D6-5966FB9271A5</table>
+</TriggerOraclev10g>
