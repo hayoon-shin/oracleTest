@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C97FCA55-3B8A-CF48-1855-7D557A366707" name="DELIVERY">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:53:41 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEL_NUM" id="460FAD4E-E43D-4877-0F5C-5CBC583E5C23">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:55:12 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORD_NUM" id="520A0075-3FD1-86BF-6BA6-165A7EFC2CD6">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:55:39 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B01C7E2B-AA6B-2316-8412-B40443815F29" referredColumn="CC4BE4B5-2A1E-0D06-45D6-FC8ED41543F0"/>
+</associations>
+</Column>
+<Column name="ADDRESS" id="4118F6C3-9761-DFB1-EB14-9DDD68B86677">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:56:16 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEL_DAY" id="1F3BAF91-7CF5-A61E-68BE-37EEAEB1D88C">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:57:02 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E129AE73-F465-75B8-00F7-64ABF8D87591" name="DELIVERY_PK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:55:12 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="460FAD4E-E43D-4877-0F5C-5CBC583E5C23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53C4B9B3-72A8-5D43-8FE9-E787115DA135" name="DELIVERY_ORDER_ORD_NUM_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:07:56 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="520A0075-3FD1-86BF-6BA6-165A7EFC2CD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

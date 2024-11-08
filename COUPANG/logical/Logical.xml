@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="B556D15C-BB4A-960F-4BC1-F08FBAD0DC6C" mainViewID="EEE750AB-C02B-D9D1-3C9D-B7081D0B059C">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 05:34:29 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
