@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D95AC73D-85B2-049C-7B05-3D01283D9BE8" name="SUBJECT">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:07:46 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="DFB0A1EE-3179-F50B-F710-B9B4EF50B281">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:18:18 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM" id="A543D39C-4748-FB0B-3E2E-87360B3DC48D">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:18:18 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="50E43090-B305-E684-B93F-DBB35E806CE6">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:19:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="049B5226-5851-FE95-DA42-C4657CC33E88" name="SUBJECT_PK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:18:18 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A543D39C-4748-FB0B-3E2E-87360B3DC48D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

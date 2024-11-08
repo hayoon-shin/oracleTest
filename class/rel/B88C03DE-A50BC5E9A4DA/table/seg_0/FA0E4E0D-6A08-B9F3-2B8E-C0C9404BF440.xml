@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA0E4E0D-6A08-B9F3-2B8E-C0C9404BF440" name="LESSON">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:36:47 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="AB2D82DB-8A17-8689-265D-40A099120909">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:37:12 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM" id="E36D6934-D636-CF1A-A041-8860CA13F7EB">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:37:45 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7827FAEA-E432-021D-DF10-B9BC9E79BBD9" referredColumn="A543D39C-4748-FB0B-3E2E-87360B3DC48D"/>
+</associations>
+</Column>
+<Column name="NAME" id="8E8024FA-11DF-F15E-DF72-9E5BA32A3FC7">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:38:52 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D3BAD72-748D-DECF-9598-B4734985D8D0" name="LESSON_PK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:39:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB2D82DB-8A17-8689-265D-40A099120909"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0532ADDB-4AB9-7350-1995-5773CF35BFDE" name="LESSON_SUBJECT_NUM_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:40:26 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E36D6934-D636-CF1A-A041-8860CA13F7EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

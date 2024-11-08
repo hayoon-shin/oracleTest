@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02E0BF96-CE07-B635-1A93-631EACEF4826" name="STUDENT">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:20:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="049AA0A7-0F13-D94A-E772-2EAEF46837BA">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:21:07 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODE" id="AA370768-B1E5-03A1-8917-2194349C2C15">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:23:29 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM" id="6260B5CB-380A-EB80-E60D-F15D64CB9C3D">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:26:55 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE6AC857-C4FF-943A-B890-70078DA0446E" referredColumn="A543D39C-4748-FB0B-3E2E-87360B3DC48D"/>
+</associations>
+</Column>
+<Column name="NAME" id="FBC98A34-2780-B8E8-676E-27A5521F4DED">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:23:56 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="C559E85F-3C4F-794C-A571-D76F7CA8085E">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:24:20 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PWD" id="F0C85A5F-D1AE-B804-1A29-D728CD7D1A2A">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:25:26 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JUMINNO" id="FEA6144A-1A9A-8F28-7AAB-BB3738E9530F">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:27:21 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE" id="769A0DB2-2904-6798-2C44-105BE088DF7E">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:28:58 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="72884193-4731-495B-1908-1EB49F87F4E6">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:29:40 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="1A385475-0258-98CB-656B-5C015B7AB294">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:30:35 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENROLL" id="A53C9534-CF1C-2B26-C2B2-F11886CE470D">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:30:50 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="962AE418-BB8A-4AEA-EE49-B1F9B1F35E22" name="STUDENT_PK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:23:29 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA370768-B1E5-03A1-8917-2194349C2C15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="494FFBC6-8377-876E-3D18-52679A5F8587" name="STUDENT_SUBJECT_NUM_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:32:50 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6260B5CB-380A-EB80-E60D-F15D64CB9C3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
