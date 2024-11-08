@@ -16,7 +16,9 @@ CREATE TABLE lesson (
 );
 
 ALTER TABLE lesson ADD CONSTRAINT lesson_pk PRIMARY KEY ( no );
-
+ALTER TABLE lesson ADD CONSTRAINT lesson_subject_num_fk FOREIGN KEY ( num )
+        REFERENCES subject ( num );
+        
 CREATE TABLE student (
     no      NUMBER(10) NOT NULL,
     code    CHAR(8 CHAR) NOT NULL,
@@ -24,18 +26,24 @@ CREATE TABLE student (
     name    VARCHAR2(10 CHAR) NOT NULL,
     id      VARCHAR2(8 CHAR) NOT NULL,
     pwd     VARCHAR2(8 CHAR) NOT NULL,
-    juminno CHAR 
+    juminno CHAR(13 CHAR) NOT NULL,
 --  WARNING: CHAR size not specified 
-     NOT NULL,
-    phone   unknown 
+    phone   CHAR(11 CHAR) NOT NULL,
 --  ERROR: Datatype UNKNOWN is not allowed 
-     NOT NULL,
     address VARCHAR2(40 CHAR),
     email   VARCHAR2(40 CHAR) NOT NULL,
-    enroll  DATE
+    enroll  DATE DEFAULT SYSDATE
 );
 
 ALTER TABLE student ADD CONSTRAINT student_pk PRIMARY KEY ( code );
+ALTER TABLE STUDENT ADD CONSTRAINT STUDENT_ID_UK UNIQUE(ID);
+ALTER TABLE STUDENT ADD CONSTRAINT STUDENT_JUMINNO_UK UNIQUE(JUMINNO);
+ALTER TABLE STUDENT ADD CONSTRAINT STUDENT_EMAIL_UK UNIQUE(EMAIL);
+ALTER TABLE student ADD CONSTRAINT student_subject_num_fk FOREIGN KEY ( num )
+            REFERENCES subject ( num ) ON DELETE CASCADE;
+                
+SELECT * FROM USER_CONSTRAINTS WHERE TABLE_NAME = UPPER('STUDENT') AND CONSTRAINT_TYPE != 'C';
+SELECT * FROM USER_CONS_COLUMNS WHERE TABLE_NAME= 'STUDENT';
 
 CREATE TABLE subject (
     no   NUMBER(10) NOT NULL,
@@ -43,35 +51,28 @@ CREATE TABLE subject (
     name VARCHAR2(20 CHAR) NOT NULL
 );
 
-ALTER TABLE subject ADD CONSTRAINT subject_pk PRIMARY KEY ( num );
+ALTER TABLE subject ADD CONSTRAINT subject_NUM_pk PRIMARY KEY ( num );
 
 CREATE TABLE trainee (
     no       NUMBER(10) NOT NULL,
-    code     CHAR(8 CHAR) NOT NULL,
-    num      CHAR(2 CHAR) NOT NULL,
+    code     CHAR(8 CHAR) NOT NULL,  -- 학생코드
+    num      CHAR(2 CHAR) NOT NULL,  -- SUBJECT NUM 
     section  VARCHAR2(10 CHAR) NOT NULL,
     register DATE NOT NULL
 );
 
-ALTER TABLE trainee ADD CONSTRAINT trainee_pk PRIMARY KEY ( no );
-
-ALTER TABLE lesson
-    ADD CONSTRAINT lesson_subject_num_fk FOREIGN KEY ( num )
-        REFERENCES subject ( num );
-
-ALTER TABLE student
-    ADD CONSTRAINT student_subject_num_fk
-        FOREIGN KEY ( num )
-            REFERENCES subject ( num )
-                ON DELETE CASCADE;
-
-ALTER TABLE trainee
-    ADD CONSTRAINT trainee_student_code_fk FOREIGN KEY ( code )
+ALTER TABLE trainee ADD CONSTRAINT trainee_NO_pk PRIMARY KEY ( no );
+ALTER TABLE trainee ADD CONSTRAINT trainee_student_code_fk FOREIGN KEY ( code )
         REFERENCES student ( code );
 
-ALTER TABLE trainee
-    ADD CONSTRAINT trainee_subject_num_fk FOREIGN KEY ( num )
+ALTER TABLE trainee ADD CONSTRAINT trainee_subject_num_fk FOREIGN KEY ( num )
         REFERENCES subject ( num );
+
+
+
+
+
+
 
 
 
