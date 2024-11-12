@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="ORDER" directorySegmentName="seg_0" id="A9A1E3DC-AED3-C908-6726-EFAD4EE7840E">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:22 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<schemaObject>41AC8126-42A9-EE10-4984-E1F0746CD00B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8E308244-6933-2F3F-154F-B6C715090A29</segment>
+<tableSpace>B86E3D0B-3663-4188-7BD6-3399B1348406</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TOT_PRICE" id="342A59EB-C508-2CF5-829F-63512A34803A">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:22 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRO_NUM" id="641416A2-4FC7-94DA-E2AD-78EE29788243">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:22 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUS_NUM" id="8ED9FC88-5490-C8EA-7470-CE41BF329CC4">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:22 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORD_NUM" id="A19ADA81-BF8F-92BF-3502-2AA8C04D7F5F">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:22 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QUANTITY" id="E157BEC5-1D2D-E2A9-47BD-66BF9CCC495A">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:22 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ORDER_PK" id="B6766F25-0A6C-8173-EFBC-B74CF73198E1">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:22 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<schemaObject>41AC8126-42A9-EE10-4984-E1F0746CD00B</schemaObject>
+<segment>9A4844E7-044E-B572-6C2F-7DB41570BC7F</segment>
+<tableSpace>B86E3D0B-3663-4188-7BD6-3399B1348406</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ORDER_PRODUCT_PRO_NUM_FK" id="4A50D1D7-8D37-2DA6-E4E1-A40B72078A33">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:22 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ORDER_CUSTOMER_CUS_NUM_FK" id="AD9D8B43-5CF7-3547-EAD3-D6FB15F0F9C6">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:22 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ORDER_PK" id="1CDC4E97-5A3E-D3B7-4A75-A2B185C59018">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:22 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<segment>9A4844E7-044E-B572-6C2F-7DB41570BC7F</segment>
+<tableSpace>B86E3D0B-3663-4188-7BD6-3399B1348406</tableSpace>
+<existingIndex>B6766F25-0A6C-8173-EFBC-B74CF73198E1</existingIndex>
+<indexSegment>9A4844E7-044E-B572-6C2F-7DB41570BC7F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

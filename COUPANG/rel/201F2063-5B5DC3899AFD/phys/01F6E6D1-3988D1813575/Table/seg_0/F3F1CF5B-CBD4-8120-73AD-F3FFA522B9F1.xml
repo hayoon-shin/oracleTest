@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CUSTOMER" directorySegmentName="seg_0" id="F3F1CF5B-CBD4-8120-73AD-F3FFA522B9F1">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CUS_NUM" id="22411E09-00B0-ED22-15D6-5AE9C1A8FF9C">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS" id="3908588D-0E13-D7D9-59B9-356EBDC62DFF">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONE" id="62D50A0D-6D0D-869E-3FBB-ECAD20D16F0F">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="91367BEA-7759-6247-7A59-99C268E381E3">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CUSTOMER_PK" id="92C9A990-ACBC-AE70-C92F-972E59AF9767">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>
