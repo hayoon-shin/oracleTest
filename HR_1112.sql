@@ -137,7 +137,8 @@ select department_id, first_name, salary from employees where salary >
 -- [샘플 문제] HR 부서의 어떤 사원은 급여 정보를 조회하는 업무를 맡고 있다. Tucker(last_name) 사원보다 급여를 많이 받고 있는 사원의 성과 이름
 -- (Name으로 별칭), 업무, 급여를 출력하시오.
 select salary from employees where last_name = 'Tucker';
-select last_name, first_name as name, job_id, salary from employees where salary > (select salary from employees where last_name = 'Tucker');
+select last_name, first_name as name, job_id, salary from employees where salary > 
+(select salary from employees where last_name = 'Tucker');
 
 -- [문제 1] 사원의 급여 정보 중 업무별 최소 급여를 받고 있는 사원의 성과 이름(Name으로 별칭), 업무, 급여, 입사일을 출력하시오.
 select distinct min(salary) from employees group by job_id;
@@ -154,3 +155,9 @@ select last_name, first_name as name, salary, department_id, job_id from employe
 select round(avg(salary)),department_id from employees group by department_id;
 select last_name, first_name as name, job_id, salary, department_id, round(avg(salary)) as Department_Average_Salary from employees
 where employee_id > any(select round(avg(salary)) from employees group by department_id) group by last_name, first_name, job_id, salary, department_id;
+
+-- 1번째 답 
+select round(avg(salary)) from employees where department_id = 90 group by department_id;
+
+select first_name, salary, E.department_id,
+(select round(avg(salary)) from employees where department_id = E.department_id group by department_id) as "부서평균급여" from employees E;
