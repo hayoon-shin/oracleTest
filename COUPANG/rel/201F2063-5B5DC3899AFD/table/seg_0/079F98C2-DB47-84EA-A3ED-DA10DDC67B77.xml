@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="079F98C2-DB47-84EA-A3ED-DA10DDC67B77" name="ORDER">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:48:28 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ORD_NUM" id="CC4BE4B5-2A1E-0D06-45D6-FC8ED41543F0">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:49:51 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_NUM" id="909E2340-A2FF-6478-5F58-96D52C0CB594">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:51:02 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6CE95E2-8E15-4B50-E7A3-1E08281D8FAB" referredColumn="76F4439B-B358-D275-EE39-8A92DF3F97F0"/>
+</associations>
+</Column>
+<Column name="CUS_NUM" id="89656267-3172-9850-B9FF-0C18FFD61790">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:51:30 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="332E6C1B-F034-7906-61CE-5C12B2934343" referredColumn="22411E09-00B0-ED22-15D6-5AE9C1A8FF9C"/>
+</associations>
+</Column>
+<Column name="QUANTITY" id="675980CB-0253-F55E-CE7E-6E5E93BCE013">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:52:37 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOT_PRICE" id="186E8361-A06F-8EB1-D14E-9EFAF4225EF4">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:53:02 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32133FB0-DDDF-57D4-3022-45369CE5CB2D" name="ORDER_PK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 07:49:51 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC4BE4B5-2A1E-0D06-45D6-FC8ED41543F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99FB7E09-A4AF-C22E-EF0C-C72BE90D9F95" name="ORDER_CUSTOMER_CUS_NUM_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:03:47 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89656267-3172-9850-B9FF-0C18FFD61790"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64CE2FB4-8D6B-D6E8-20A0-F1D7AC01C2AB" name="ORDER_PRODUCT_PRO_NUM_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:06:39 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="909E2340-A2FF-6478-5F58-96D52C0CB594"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

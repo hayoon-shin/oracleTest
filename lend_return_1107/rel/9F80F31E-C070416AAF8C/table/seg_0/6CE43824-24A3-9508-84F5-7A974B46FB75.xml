@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6CE43824-24A3-9508-84F5-7A974B46FB75" name="video">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:42:39 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="v_code" id="082BAF5F-9E5C-3AC2-F7D1-7A17476AC47D">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:46:06 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="v_title" id="2CEB0E27-6544-B55C-7E43-3C3E33D85624">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:46:06 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="v_genre" id="08A63E8C-3428-7554-2E0D-FD28FE4AD2ED">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:46:06 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="v_pay" id="30C22F13-766A-B720-F1E2-1C642B5EB87F">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:46:06 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="v_lend_state" id="38FFCC6F-C9D2-C6EA-1B7E-C0D5D13B4F5B">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:46:06 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="v_make_company" id="30AD54FC-74B9-F999-0001-72C804A55B8A">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:46:06 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="v_make_date" id="475C5420-0F55-C95E-14E8-00329F1DC50A">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:46:06 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="v_view_age" id="DCC3B712-A108-E81A-D9E7-0F307C17FBCB">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:46:06 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6DB77D13-D441-6CD3-2220-B13EBB4D7197" name="video_PK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:46:06 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="082BAF5F-9E5C-3AC2-F7D1-7A17476AC47D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

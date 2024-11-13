@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DELIVERY" directorySegmentName="seg_0" id="C97FCA55-3B8A-CF48-1855-7D557A366707">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DEL_DAY" id="1F3BAF91-7CF5-A61E-68BE-37EEAEB1D88C">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS" id="4118F6C3-9761-DFB1-EB14-9DDD68B86677">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEL_NUM" id="460FAD4E-E43D-4877-0F5C-5CBC583E5C23">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORD_NUM" id="520A0075-3FD1-86BF-6BA6-165A7EFC2CD6">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DELIVERY_ORDER_ORD_NUM_FK" id="53C4B9B3-72A8-5D43-8FE9-E787115DA135">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DELIVERY_PK" id="E129AE73-F465-75B8-00F7-64ABF8D87591">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:31:19 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

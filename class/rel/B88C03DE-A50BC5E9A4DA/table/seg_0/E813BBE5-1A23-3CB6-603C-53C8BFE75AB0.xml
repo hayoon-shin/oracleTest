@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E813BBE5-1A23-3CB6-603C-53C8BFE75AB0" name="TRAINEE">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:41:00 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="71E4B784-6E27-0352-4A2B-49D206405CDC">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:41:19 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODE" id="A7812D02-80A3-293F-966E-307660C4D314">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:41:44 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3AC28E88-096A-6454-0581-7781EFE82577" referredColumn="AA370768-B1E5-03A1-8917-2194349C2C15"/>
+</associations>
+</Column>
+<Column name="NUM" id="1CAC7F7E-7555-D072-A819-08002A77653B">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:42:16 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C723D10-CAFE-A112-B941-5A077850C25E" referredColumn="A543D39C-4748-FB0B-3E2E-87360B3DC48D"/>
+</associations>
+</Column>
+<Column name="SECTION" id="72A5609C-AE86-FDDA-D8D6-235A2477D9C8">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:43:03 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGISTER" id="F1EB3287-3169-69BF-A8F5-708CBA6BAF64">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:43:29 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26B10A9E-FFBC-DCD1-C805-176A48B2FA34" name="TRAINEE_PK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:43:52 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71E4B784-6E27-0352-4A2B-49D206405CDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0BC2EFDE-9598-3364-E1D1-8CD022E664D6" name="TRAINEE_STUDENT_CODE_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:44:23 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7812D02-80A3-293F-966E-307660C4D314"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F31AB42-6476-D8F2-DED3-25C686751422" name="TRAINEE_SUBJECT_NUM_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 02:46:16 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CAC7F7E-7555-D072-A819-08002A77653B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

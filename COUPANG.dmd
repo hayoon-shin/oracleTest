@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="COUPANG" id="540335A4-931C-1279-F0DC-88B991B0409F" version="3.5">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 05:34:29 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>540335A4-931C-1279-F0DC-88B991B0409F</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="5C968376-C4E1-E31B-2575-AECFEC8C0346">
+<designStoragePath>C:\Users\ssh33\Documents\oracleTest</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

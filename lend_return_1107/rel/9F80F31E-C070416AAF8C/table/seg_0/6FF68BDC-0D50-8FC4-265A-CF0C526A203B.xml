@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6FF68BDC-0D50-8FC4-265A-CF0C526A203B" name="lend_return">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:46:57 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lr_code" id="8D309DA9-E23A-74A2-2C0A-32075DF0B1F7">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:49:20 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="g_code" id="199086F4-630C-9171-725E-2A9218E5EA17">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:52:32 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6667BD56-5929-2463-3B52-9475C9195272" referredColumn="675685E7-5C80-F95D-CF26-0955294F0045"/>
+</associations>
+</Column>
+<Column name="v_code" id="21FE69D9-61A4-04B0-ACDD-22769F9E3B72">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:52:32 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5DEB250-EB6D-62A8-F1A2-9957BFD1EB99" referredColumn="082BAF5F-9E5C-3AC2-F7D1-7A17476AC47D"/>
+</associations>
+</Column>
+<Column name="l_date" id="5D48CDD9-8DA1-5ADA-ACF7-946E1C20A2D5">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:49:20 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="r_plan_date" id="01D9B9D5-BAE9-4427-7D35-CA21702BA94D">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:49:20 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="l_total_pay" id="D7A05F20-3EA2-2A93-5BC2-16A6B2040FB5">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:49:20 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E47E7694-369F-C5D6-ECC4-225B2F945747" name="lend_return_PK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:49:20 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D309DA9-E23A-74A2-2C0A-32075DF0B1F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97737FA7-4A20-39F5-2A60-E11305E3CAE5" name="lend_return_v_gogek_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:51:30 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="199086F4-630C-9171-725E-2A9218E5EA17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1699CBC0-EE5C-269B-FD9C-53633C658654" name="lend_return_video_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:53:15 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21FE69D9-61A4-04B0-ACDD-22769F9E3B72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

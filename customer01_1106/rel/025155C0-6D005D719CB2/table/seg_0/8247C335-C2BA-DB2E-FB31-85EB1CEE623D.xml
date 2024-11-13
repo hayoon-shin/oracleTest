@@ -1,0 +1,236 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8247C335-C2BA-DB2E-FB31-85EB1CEE623D" schemaObject="9D5D9D00-34C7-6E70-C832-50B6F6A066F7" name="JOB_HISTORY">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JOB_HISTORY</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Table that stores job history of the employees. If an employee
+changes departments within the job or changes jobs within the department,
+new rows get inserted into this table with old job information of the
+employee. Contains a complex primary key: employee_id+start_date.
+Contains 25 rows. References with jobs, employees, and departments tables.]]></commentInRDBMS>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>1DEA4D05-A69A-2BE4-99C1-34FB976A2AA3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="95A53080-8CF2-6192-12A7-3559B80E4D4F">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOB_HISTORY</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[A not null column in the complex primary key employee_id+start_date.
+Foreign key to employee_id column of the employee table]]></commentInRDBMS>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>B13A6E88-D57D-33F7-4F5A-5DB63E962E48</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>JHIST_EMPLOYEE_NN</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="A9E6E426-9AAA-D77A-7D51-8B3CCC05A42B" referredColumn="F2B38962-264A-ECE7-C4F8-C95363296397"/>
+</associations>
+</Column>
+<Column name="START_DATE" id="9CF84B1A-4D2F-15E9-04AA-F6DD62B52445">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOB_HISTORY</sourceObjSchema>
+<sourceObjName>START_DATE</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[A not null column in the complex primary key employee_id+start_date.
+Must be less than the end_date of the job_history table. (enforced by
+constraint jhist_date_interval)]]></commentInRDBMS>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>E3D750C0-2AC0-7302-84A4-CDA5CE82FD6D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>JHIST_START_DATE_NN</notNullConstraintName>
+</Column>
+<Column name="END_DATE" id="110AF239-20BE-B781-E555-784801D3B2A7">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOB_HISTORY</sourceObjSchema>
+<sourceObjName>END_DATE</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Last day of the employee in this job role. A not null column. Must be
+greater than the start_date of the job_history table.
+(enforced by constraint jhist_date_interval)]]></commentInRDBMS>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>12CCCDED-1E15-F35D-F08A-0CDF52938F8C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>JHIST_END_DATE_NN</notNullConstraintName>
+</Column>
+<Column name="JOB_ID" id="31C1285B-45B0-6C65-D08F-60C2273123C4">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOB_HISTORY</sourceObjSchema>
+<sourceObjName>JOB_ID</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Job role in which the employee worked in the past; foreign key to
+job_id column in the jobs table. A not null column.]]></commentInRDBMS>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>E9A0FCD7-5996-E9DC-0987-D78301088CB7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>JHIST_JOB_NN</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="39996E52-DDFA-D8AA-FC71-AF7408E47812" referredColumn="C9EADD0F-FD19-3482-D856-865F00631D05"/>
+</associations>
+</Column>
+<Column name="DEPARTMENT_ID" id="476178F1-850E-84C9-055F-C623D474FA95">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOB_HISTORY</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Department id in which the employee worked in the past; foreign key to deparment_id column in the departments table]]></commentInRDBMS>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>9075BB0B-EEA4-A2C4-D3E8-80F439278BFC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45C985A1-16EB-F061-3AE8-D251D18F5FDF" referredColumn="BA8168EC-6126-CFDA-D9FA-6601B813A03E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4919DB5A-86B7-C36E-DD7B-3B6996C339D0" name="JHIST_EMP_ID_ST_DATE_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JHIST_EMP_ID_ST_DATE_PK</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>C7D44FAF-A587-BBB1-6B61-1B5B1519C795</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95A53080-8CF2-6192-12A7-3559B80E4D4F"/>
+<colUsage columnID="9CF84B1A-4D2F-15E9-04AA-F6DD62B52445"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2DCC538-C29C-7BD2-2CF6-D14A315E8D89" schemaObject="9D5D9D00-34C7-6E70-C832-50B6F6A066F7" name="JHIST_DEPARTMENT_IX">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JHIST_DEPARTMENT_IX</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>6CB85514-7B78-35BB-821E-52C5455923D4</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="476178F1-850E-84C9-055F-C623D474FA95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64767AA8-548F-9426-2107-CF472B42CDAD" schemaObject="9D5D9D00-34C7-6E70-C832-50B6F6A066F7" name="JHIST_EMPLOYEE_IX">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JHIST_EMPLOYEE_IX</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>A3FD76C3-8873-7AA0-AC30-DB8023D8BF60</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95A53080-8CF2-6192-12A7-3559B80E4D4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="103C7313-07AF-070D-5661-DF21B0665692" schemaObject="9D5D9D00-34C7-6E70-C832-50B6F6A066F7" name="JHIST_EMP_ID_ST_DATE_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JHIST_EMP_ID_ST_DATE_PK</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>548B908A-DE34-1912-7FCD-AA71D8FA560F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95A53080-8CF2-6192-12A7-3559B80E4D4F"/>
+<colUsage columnID="9CF84B1A-4D2F-15E9-04AA-F6DD62B52445"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4964389F-6F5A-8610-34DA-DFE1695AF707" schemaObject="9D5D9D00-34C7-6E70-C832-50B6F6A066F7" name="JHIST_JOB_IX">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JHIST_JOB_IX</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>E8DFD5A6-C4E1-6F7C-93E4-C1CC3C5AF886</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31C1285B-45B0-6C65-D08F-60C2273123C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E24D6F3-530F-AEE1-6C69-F9A284FE8E54" name="JHIST_DEPT_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="476178F1-850E-84C9-055F-C623D474FA95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA091C1B-6A05-2624-D4A8-88DFDA6CD3D9" name="JHIST_EMP_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95A53080-8CF2-6192-12A7-3559B80E4D4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE1C883D-3E0D-09B4-685F-CA7DA83CCF3B" name="JHIST_JOB_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31C1285B-45B0-6C65-D08F-60C2273123C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="JHIST_DATE_INTERVAL" directorySegmentName="seg_0" id="8427D691-757E-CBE2-BE0A-D656BE0EF1DF">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JHIST_DATE_INTERVAL</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<importedID>D8EF21DD-5E77-3785-773F-01312C5C8E06</importedID>
+<rule><![CDATA[end_date > start_date]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

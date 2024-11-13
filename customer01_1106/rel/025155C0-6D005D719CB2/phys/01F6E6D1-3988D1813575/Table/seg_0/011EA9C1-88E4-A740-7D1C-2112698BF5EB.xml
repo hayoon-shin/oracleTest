@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="COUNTRIES" directorySegmentName="seg_0" id="011EA9C1-88E4-A740-7D1C-2112698BF5EB">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<schemaObject>9D5D9D00-34C7-6E70-C832-50B6F6A066F7</schemaObject>
+<iotPctThreshold>50</iotPctThreshold>
+<logging>YES</logging>
+<organization>INDEX</organization>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1013D8CA-734D-5E8F-5F41-5D183631E690</segment>
+<tableSpace>7D56FC64-898E-F4E1-8651-0BFA301D6885</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="REGION_ID" id="317C7D6E-9E73-D693-AADA-D8D33C2CADF6">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_NAME" id="98EF0792-F6C7-57EF-7ADD-125E067C2B76">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_ID" id="ABA0509E-6FF9-6B8E-6A54-9FCB278CBE35">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="COUNTR_REG_FK" id="32DE4D0F-78F0-D3C2-9153-964C9706A649">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="COUNTRY_C_ID_PK" id="1B8A96C2-08C2-B317-0810-541A92573BDA">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-06 06:43:55 UTC</createdTime>
+<ownerDesignName>customer01_1106</ownerDesignName>
+<schemaObject>9D5D9D00-34C7-6E70-C832-50B6F6A066F7</schemaObject>
+<segment>1013D8CA-734D-5E8F-5F41-5D183631E690</segment>
+<tableSpace>7D56FC64-898E-F4E1-8651-0BFA301D6885</tableSpace>
+<indexSegment>1013D8CA-734D-5E8F-5F41-5D183631E690</indexSegment>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

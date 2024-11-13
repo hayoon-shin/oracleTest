@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E6CE95E2-8E15-4B50-E7A3-1E08281D8FAB" containerWithKeyObject="079F98C2-DB47-84EA-A3ED-DA10DDC67B77" localFKIndex="64CE2FB4-8D6B-D6E8-20A0-F1D7AC01C2AB" name="ORDER_PRODUCT_PRO_NUM_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-08 08:06:39 UTC</createdTime>
+<ownerDesignName>COUPANG</ownerDesignName>
+<referredTableLongName>PRODUCT</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>DEAA5B29-4C1F-BD96-5000-ADA1F0FAF654</referredTableID>
+<keyObject>3F564062-B97A-D0BF-6B4B-303233D369B3</keyObject>
+<referredKeyID>3F564062-B97A-D0BF-6B4B-303233D369B3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PRO_NUM</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

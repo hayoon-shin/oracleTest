@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8119BA55-1C26-1384-8E7A-A8BA84C3DA07" name="v_gogek">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:34:51 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="g_code" id="675685E7-5C80-F95D-CF26-0955294F0045">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:39:01 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="g_name" id="A5233E77-8E62-3D69-EF29-C1A0BDB262ED">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:39:01 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="g_age" id="524ED27F-5A57-C74E-51C1-EF4966BF85C5">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:39:01 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="g_tel" id="DF822162-378C-1FA5-81EC-9C7E22076696">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:39:01 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="g_addr" id="706428F2-80A9-E95D-A886-E7CF4EDB0183">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:39:01 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="42019F77-B631-3FFA-28DA-C2A686CAB8F2" name="v_gogek_PKv2">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-07 13:41:05 UTC</createdTime>
+<ownerDesignName>lend_return_1107</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="675685E7-5C80-F95D-CF26-0955294F0045"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

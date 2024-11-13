@@ -53,10 +53,32 @@ SELECT DEPARTMENT_ID, SALARY FROM EMPLOYEES WHERE DEPARTMENT_ID >= 70;
 SELECT DEPARTMENT_ID, MAX(SALARY), MIN(SALARY), ROUND(AVG(SALARY), 1),
 COUNT(SALARY) FROM EMPLOYEES WHERE DEPARTMENT_ID >= 70 GROUP BY DEPARTMENT_ID HAVING SUM(SALARY) >= 30000;
 SELECT DEPARTMENT_ID, AVG(SALARY) FROM EMPLOYEES;
---문자열 일부만 추출 SUBSTR(대상, 시작위치, 추출갯수)
+--03년도에 입사한 사원 알아내기
+select first_name, hire_date from employees where  substr(hire_date, 1, 2) = '03';
+select first_name, hire_date from employees where to_char(hire_date, 'YY') = '03';
+--이름이 k로 끝나는 직원을 검색
+select first_name from employees where first_name like '%k';
+select first_name from employees where upper(substr(first_name, -1)) = upper('k');
+--현재 시간을 나타내시오 
+select to_char(sysdate,'YYYY/MM/DD HH24:MI:SS') from dual;
+select floor(sysdate - to_date('2024/11/05', 'YYYY/MM/DD')) from dual;
+--숫자를 우리가 원하는 형식으로 출력하기 1234567.23 => $1,234,567.23
+select trim(to_char(123456.23, 'L999,999,999,999.99')) as money from dual;
+select first_name, trim(to_char(salary, 'L999,999,999,999.99')) as salary from employees;
+--문자 + 문자 = 숫자
+select to_number('10,000', '999,999')+to_number('20,000', '999,999')from dual;
+---문자열 일부만 추출 SUBSTR(대상, 시작위치, 추출갯수)
 SELECT SUBSTR('DATEBASE',1,3) FROM DUAL;
 --20번 부서에서 사원들의 입사년도 가져오기
 SELECT EMPLOYEE_ID, FIRST_NAME, SUBSTR(HIRE_DATE, 1,2) || '년도' AS "입사년도" FROM EMPLOYEES WHERE DEPARTMENT_ID = 20;
+--NVL
+select first_name, salary, commission_pct, job_id from employees order by job_id;
+select first_name, salary, nvl(commission_pct,0) commission_pct, job_id from employees order by job_id;
+--NVL2(대상, 널이아닐때 적용될값, 널일때 적용될값)
+select first_name, salary, commission_pct, salary+(salary*commission_pct) as total from employees; 
+select first_name, salary, commission_pct, salary+(salary*NVL(commission_pct,0)) as total from employees;
+select first_name, salary, commission_pct, salary+(salary*NVL2(commission_pct,commission_pct, 0)) as total from employees;
+
 --TRIM
 SELECT TRIM(LEADING FROM ' ABCD ') LT, LENGTH(TRIM(LEADING FROM '       ABCD '))LT_LEN,
 TRIM(TRAILING FROM ' ABCD ' ) RT, LENGTH(TRIM(TRAILING FROM '      ABCD')) RT_LEN,
