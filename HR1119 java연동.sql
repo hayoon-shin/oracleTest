@@ -39,6 +39,7 @@ AVR NUMBER(20)
 );
 
 alter table student add constraint student_no_pk primary key(no);
+alter table student add PRICE NUMBER(20);
 SELECT * FROM STUDENT;
 desc student;
 select * from user_cons_columns where table_name = 'STUDENT';
