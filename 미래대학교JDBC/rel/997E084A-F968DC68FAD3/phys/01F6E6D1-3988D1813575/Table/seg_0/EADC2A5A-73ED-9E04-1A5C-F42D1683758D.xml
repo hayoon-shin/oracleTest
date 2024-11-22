@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="LESSON" directorySegmentName="seg_0" id="EADC2A5A-73ED-9E04-1A5C-F42D1683758D">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<schemaObject>3B77B0FF-0140-EA2E-DB4E-5F14B3C4E2CC</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>FF035D80-CD80-D6CF-BB60-E1D80ACE4017</segment>
+<tableSpace>DCF75DEE-480F-7703-F769-3B91F796FE71</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NO" id="25AE24F2-3C2D-022D-5082-D1F544B3A571">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ABBRE" id="9CB21099-85B0-40B1-3706-3AD915C7F061">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="F12E7FDE-863D-847C-B2D1-9EB44C7DE6F4">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LESSON_ABBRE_UK" id="0EB28098-5125-22E7-77A9-D816261F3217">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:34 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<schemaObject>3B77B0FF-0140-EA2E-DB4E-5F14B3C4E2CC</schemaObject>
+<segment>E64B0F1B-F3D4-1003-D74A-BCCAEC777159</segment>
+<tableSpace>DCF75DEE-480F-7703-F769-3B91F796FE71</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LESSON_NO_PK" id="E314461C-1C03-F968-A283-75D4C54C7A7F">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:34 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<schemaObject>3B77B0FF-0140-EA2E-DB4E-5F14B3C4E2CC</schemaObject>
+<segment>E64B0F1B-F3D4-1003-D74A-BCCAEC777159</segment>
+<tableSpace>DCF75DEE-480F-7703-F769-3B91F796FE71</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="LESSON_NO_PK" id="42956C01-FCE4-C19A-99C4-8BD7B3278DDB">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:35 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<segment>E64B0F1B-F3D4-1003-D74A-BCCAEC777159</segment>
+<tableSpace>DCF75DEE-480F-7703-F769-3B91F796FE71</tableSpace>
+<existingIndex>E314461C-1C03-F968-A283-75D4C54C7A7F</existingIndex>
+<indexSegment>E64B0F1B-F3D4-1003-D74A-BCCAEC777159</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="LESSON_ABBRE_UK" id="ECCEC0E8-6626-1116-C8DC-07ABFC798CA7">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:35 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<segment>E64B0F1B-F3D4-1003-D74A-BCCAEC777159</segment>
+<tableSpace>DCF75DEE-480F-7703-F769-3B91F796FE71</tableSpace>
+<existingIndex>0EB28098-5125-22E7-77A9-D816261F3217</existingIndex>
+<indexSegment>E64B0F1B-F3D4-1003-D74A-BCCAEC777159</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

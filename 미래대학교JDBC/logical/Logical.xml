@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="FC61D6D5-2ADE-841C-2DFB-4F47D6767013" mainViewID="97C6371E-1612-612D-2303-B05BCF89FCEF">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:00 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

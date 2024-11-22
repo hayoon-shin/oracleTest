@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="SUBJECT" directorySegmentName="seg_0" id="8AA32B07-125E-8635-F847-949C00548EE1">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<schemaObject>3B77B0FF-0140-EA2E-DB4E-5F14B3C4E2CC</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>FF035D80-CD80-D6CF-BB60-E1D80ACE4017</segment>
+<tableSpace>DCF75DEE-480F-7703-F769-3B91F796FE71</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NO" id="A6305833-E3E8-785D-96FD-F8C8954712BD">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM" id="CB6C1903-BF32-7C39-7291-6E393DA53775">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="DD3C0BD6-E8F0-824A-1BD4-39FC3029853C">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SUBJECT_NUM_UK" id="8C2F5712-EB09-3A8D-D9DC-798BFED60F2F">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:34 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<schemaObject>3B77B0FF-0140-EA2E-DB4E-5F14B3C4E2CC</schemaObject>
+<segment>E64B0F1B-F3D4-1003-D74A-BCCAEC777159</segment>
+<tableSpace>DCF75DEE-480F-7703-F769-3B91F796FE71</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SUBJECT_NO_PK" id="F29E7F43-A6A0-38F9-ECBD-8D84F110E6CD">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:34 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<schemaObject>3B77B0FF-0140-EA2E-DB4E-5F14B3C4E2CC</schemaObject>
+<segment>E64B0F1B-F3D4-1003-D74A-BCCAEC777159</segment>
+<tableSpace>DCF75DEE-480F-7703-F769-3B91F796FE71</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SUBJECT_NO_PK" id="7D3F54E8-6DA4-02E7-F658-09AE566671AD">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:35 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<segment>E64B0F1B-F3D4-1003-D74A-BCCAEC777159</segment>
+<tableSpace>DCF75DEE-480F-7703-F769-3B91F796FE71</tableSpace>
+<existingIndex>F29E7F43-A6A0-38F9-ECBD-8D84F110E6CD</existingIndex>
+<indexSegment>E64B0F1B-F3D4-1003-D74A-BCCAEC777159</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="SUBJECT_NUM_UK" id="4AC58C08-0779-09AA-0FE0-9B8698A1135F">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:35 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<segment>E64B0F1B-F3D4-1003-D74A-BCCAEC777159</segment>
+<tableSpace>DCF75DEE-480F-7703-F769-3B91F796FE71</tableSpace>
+<existingIndex>8C2F5712-EB09-3A8D-D9DC-798BFED60F2F</existingIndex>
+<indexSegment>E64B0F1B-F3D4-1003-D74A-BCCAEC777159</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

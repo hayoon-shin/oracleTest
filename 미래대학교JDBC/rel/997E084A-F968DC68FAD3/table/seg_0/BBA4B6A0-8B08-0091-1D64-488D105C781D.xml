@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BBA4B6A0-8B08-0091-1D64-488D105C781D" schemaObject="3B77B0FF-0140-EA2E-DB4E-5F14B3C4E2CC" name="TRAINEE">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>TRAINEE</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="4C9E41A6-74B7-9C1B-8386-33549A1EB248">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="S_NUM" id="9A1B84E3-C483-2042-F19A-83344418D9E5">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>S_NUM</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9DC39575-2D9C-F63A-801C-13C3D6FC1BB9" referredColumn="6B8913C9-03F0-4B7D-CE1D-806C95D71A7D"/>
+</associations>
+</Column>
+<Column name="ABBRE" id="A481AA32-DF18-33AB-A760-61E99B0D68F6">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>ABBRE</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15376074-E78E-2F83-6DAA-26043DC3EB56" referredColumn="9CB21099-85B0-40B1-3706-3AD915C7F061"/>
+</associations>
+</Column>
+<Column name="SECTION" id="9FFCBFFA-FAAE-26A0-F7B9-123ED23DD296">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>SECTION</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TDATE" id="2D61B0A7-6AD3-E451-AADF-E2D5F7DC8757">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>TDATE</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:33 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>sysdate      -- 수강신청일</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9AE5DC3-1E76-DDF6-7656-8395B59B942B" name="TRAINEE_NO_PK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>TRAINEE_NO_PK</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:35 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C9E41A6-74B7-9C1B-8386-33549A1EB248"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6199146C-10E8-8CDE-7A22-A5B1B43F544E" schemaObject="3B77B0FF-0140-EA2E-DB4E-5F14B3C4E2CC" name="TRAINEE_NO_PK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>TRAINEE_NO_PK</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:34 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C9E41A6-74B7-9C1B-8386-33549A1EB248"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5BA7F82-D9BB-A8E4-42A8-AAF4843646DD" name="TRAINEE_LESSON_ABBRE_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:36 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A481AA32-DF18-33AB-A760-61E99B0D68F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8E3B569-B2C1-407F-B8A7-E61B7E32119B" name="TRAINEE_STUDENT_NUM_FK">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:36 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A1B84E3-C483-2042-F19A-83344418D9E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9450E2E3-0758-7F61-AA59-1CC0A1E112A1" containerWithKeyObject="C51C828C-0331-E3EA-A9BB-333D7CAAAD02" localFKIndex="F45F99BC-5900-CD97-9551-0F8AE4F7965B" name="STUDENT_SUBJECT_NUM_FK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>STUDENT_SUBJECT_NUM_FK</sourceObjName>
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:36 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<referredTableLongName>SUBJECTDB.SUBJECT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8AA32B07-125E-8635-F847-949C00548EE1</referredTableID>
+<keyObject>4AC58C08-0779-09AA-0FE0-9B8698A1135F</keyObject>
+<referredKeyID>4AC58C08-0779-09AA-0FE0-9B8698A1135F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>NUM</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

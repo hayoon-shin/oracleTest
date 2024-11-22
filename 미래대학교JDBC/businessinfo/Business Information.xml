@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="12508A5D-B6BF-2491-5BDB-D6F49A397DBB">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:01 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

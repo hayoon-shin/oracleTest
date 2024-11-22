@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="미래대학교JDBC" id="827B9C95-F478-5DAE-97D2-EFCC2597BE60" version="3.5">
+<createdBy>ssh33</createdBy>
+<createdTime>2024-11-22 03:50:00 UTC</createdTime>
+<ownerDesignName>미래대학교JDBC</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>827B9C95-F478-5DAE-97D2-EFCC2597BE60</designId>
+</OSDM_Design>
