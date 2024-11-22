@@ -69,3 +69,8 @@ foreign key(abbre) references lesson(abbre) on delete set null;
 create sequence trainee_seq 
 start with 1
 increment by 1;
+
+insert into subject(no, s_num, s_name) values (subject_seq.nextval, ?, ?);
+
+-- 동일학과번호 총갯수
+select LPAD(count(*),4,'0') as total_count from student where s_num = 10;
