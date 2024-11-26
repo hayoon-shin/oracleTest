@@ -51,13 +51,20 @@ create sequence lesson_seq
 start with 1
 increment by 1;
 
+select * from lesson;
+delete from lesson where no = ?;
+update lesson set abbre = '01',name = '컴퓨터구조론' where no = 10;
+insert into lesson values(lesson_seq.nextval, '', '');
+desc lesson;
+
+drop table trainee;
 -- trainee 수강 신청
 create table trainee( 
     no number ,                     -- pk seq
     s_num varchar2(8) not null,     -- student(fk) 학생번호
     abbre varchar2(2) not null,     -- lesson(fk) 과목요약
     section varchar2(20) not null,  -- 전공,부전공,교양
-    tdate date default sysdate      -- 수강신청일
+    registdate date default sysdate      -- 수강신청일
 );
 
 alter table trainee add constraint trainee_no_pk primary key(no);
@@ -65,7 +72,8 @@ alter table trainee add constraint trainee_student_num_fk
 foreign key(s_num) references student(num) on delete set null;
 alter table trainee add constraint trainee_lesson_abbre_fk 
 foreign key(abbre) references lesson(abbre) on delete set null;
-    
+
+
 create sequence trainee_seq 
 start with 1
 increment by 1;
@@ -74,3 +82,5 @@ insert into subject(no, s_num, s_name) values (subject_seq.nextval, ?, ?);
 
 -- 동일학과번호 총갯수
 select LPAD(count(*),4,'0') as total_count from student where s_num = 10;
+
+
